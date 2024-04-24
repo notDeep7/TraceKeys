@@ -1,10 +1,24 @@
-
-html,body {
-    /*height: 100%;*/
-    /*overflow: hidden;*/
+@font-face {
+    font-family: "necapc3";
+    src: url('fonts/necapc3.ttf');
 }
+
+@font-face {
+  font-family: "pixelNes";
+    src: url('fonts/pixelNes.otf');
+}
+
+/* html,body {
+    /*height: 100%;*/
+    /*overflow: hidden;
+} */
+
+* {
+    font-family: 'necapc3';
+}
+
 body {
-    font-family: monospace;
+    font-family: 'necapc3';
     font-weight: 400;
     font-size:12px;
     
@@ -14,17 +28,25 @@ body {
     width:100%;
 
     /*color: #70787e;*/
-    background-color: #1C1C1C;
+    background-color: rgb(18, 18, 18);
     color: #888;
     
-    -webkit-font-smoothing: antialiased !important;
-    -moz-osx-font-smoothing: antialiased !important;
+    /* -webkit-font-smoothing: antialiased !important;
+    -moz-osx-font-smoothing: antialiased !important; */
 
-    text-rendering: geometricPrecision;
+    /* text-rendering: geometricPrecision; */
 }
 
+:root {
+    --bgColor: rgb(18, 18, 18);
+    --textPrimary: #2c9080;
+    --primaryColor: #2c9080;
+}
+
+
 a {
-    color: #bbb;
+    color: #36fda0;
+    text-shadow: 0 0 20px;
     text-decoration: none;
 }
 a:hover {
@@ -109,15 +131,24 @@ a:hover {
     font-size: 24px;
 }
 #game-title .title-keys {
+    color: var(--primaryColor);
+    text-shadow: 0 0 50px;
+    font-family: 'pixelNes';
     font-weight:400;
 }
 #game-title .title-hit {
-    font-weight: 900;
+    color: var(--primaryColor);
+    text-shadow: 0 0 50px;
+    font-family: 'pixelNes';
+    font-weight: 1000;
 }
 #game-score,
 #game-best-score {
+    color: yellow;
+    text-shadow: 0 0 30px;
     width: 450px;
     margin: auto;
+    font-size: 14px;
 }
 #score-text,
 #popup-score-text {
@@ -165,7 +196,7 @@ a:hover {
 }
 
 .btn {
-    font-family: monospace;
+    font-family: 'necapc3';
 
     cursor: pointer;
 
@@ -209,8 +240,32 @@ a:hover {
 }
 
 .popup-inner {
-    background: rgba(28,28,28,0.65); 
+    background: rgba(28,28,28,0.65);
+    color: #36fda0;
+    text-shadow: 0 0 30px;
     opacity: 0.9;
     padding: 10px;
+}
+
+.zoom-link {
+    display: inline-block;
+    transition: transform 0.3s ease-in-out;
+}
+
+.zoom-link:hover {
+    transform: scale(1.2);
+}
+
+
+.how-to-play-button {
+    color: yellow;
+    text-shadow: 0 0 30px yellow;
+    font-weight: 600;
+}
+
+#start-button {
+    color: #36fda0;
+    text-shadow: 0 0 30px;
+    font-weight: 600;
 }
 
