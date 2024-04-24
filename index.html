@@ -1,0 +1,141 @@
+<html>
+
+<head>
+	<title>KeysHit</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=0">
+
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+</head>
+
+<body>
+
+	<div id="main-container">
+		<div id="game-title"><span class="title-keys">Keys</span><span class="title-hit"> Hit</span></div>
+		<div id="game-score">
+			<div>SCORE: <span id="score-text"></span></div>
+		</div>
+		<div id="game-best-score">
+			<div>BEST SCORE: <span id="best-score-text"></span></div>
+		</div>
+		<div id="game-content" class="state-0">
+			<div id="key-containers">
+				<div class="key-container">
+					<div class="container-text"></div>
+				</div>
+				<div class="key-container">
+					<div class="container-text"></div>
+				</div>
+				<div class="key-container">
+					<div class="container-text"></div>
+				</div>
+				<div class="key-container">
+					<div class="container-text"></div>
+				</div>
+				<div class="key-container">
+					<div class="container-text"></div>
+				</div>
+				<div class="key-container">
+					<div class="container-text"></div>
+				</div>
+				<div class="key-container">
+					<div class="container-text"></div>
+				</div>
+				<div class="key-container">
+					<div class="container-text"></div>
+				</div>
+				<div class="key-container">
+					<div class="container-text"></div>
+				</div>
+				<div class="key-container">
+					<div class="container-text"></div>
+				</div>
+				<div class="key-container">
+					<div class="container-text"></div>
+				</div>
+				<div class="key-container">
+					<div class="container-text"></div>
+				</div>
+				<div class="key-container">
+					<div class="container-text"></div>
+				</div>
+				<div class="key-container">
+					<div class="container-text"></div>
+				</div>
+				<div class="key-container">
+					<div class="container-text"></div>
+				</div>
+				<div class="key-container">
+					<div class="container-text"></div>
+				</div>
+				<div class="key-container">
+					<div class="container-text"></div>
+				</div>
+				<div class="key-container">
+					<div class="container-text"></div>
+				</div>
+				<div class="key-container">
+					<div class="container-text"></div>
+				</div>
+				<div class="key-container">
+					<div class="container-text"></div>
+				</div>
+			</div>
+			<div class="popups">
+				<div class="popup" id="start-game-popup">
+					<div class="popup-inner">
+						<div><button class="btn wide-btn" id="start-button">START</button></div>
+						<div><button class="btn wide-btn how-to-play-button">HOW TO PLAY?</button></div>
+					</div>
+				</div>
+
+				<div class="popup" id="restart-game-popup">
+					<div class="popup-inner">
+						<p id="popup-over-msg"></p>
+						<div style="font-size:18px">SCORE: <span id="popup-score-text">0</span></div>
+						<div><button class="btn wide-btn" id="restart-button">RESTART</button></div>
+						<div><button class="btn wide-btn how-to-play-button">HOW TO PLAY?</button></div>
+					</div>
+				</div>
+				<div class="popup" id="how-to-play-game-popup">
+					<div class="popup-inner">
+						<p>1. Type the keys in the order they appear.</p>
+						<p>2. There should be atleast 2 keys on the screen all the time.</p>
+						<p>3. There should be atleast 1 empty circle all the time.</p>
+						<div><button class="btn wide-btn pop-state-btn">OK</button></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="footer">
+
+			<div class="footer-text">Designed by
+
+				<a href="https://github.com/notDeep7" target="_blank">notDeep7
+				</a>
+
+				<a href="https://github.com/deewakar-k" target="_blank">/
+					deewakar-k</a>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+		(function scale() {
+			let contentWidth = 546;
+			let contentHeight = 620;
+			let scale = Math.min(window.innerWidth / contentWidth, window.innerHeight / contentHeight) * 100;
+			scale = Math.min(scale, 140);
+			let translateX = Math.min((scale - 100) / 2, 0);
+			let translateY = (scale - 100) / 2;
+			let mainContainer = document.getElementById("main-container");
+			mainContainer.setAttribute("style", `transform: translate(${translateX}%,${translateY}%) scale(${scale}%,${scale}%)`);
+		})();		
+	</script>
+	<script type="text/javascript" src="js/key-container-colors.js"></script>
+	<script type="text/javascript" src="js/game.js"></script>
+
+</body>
+
+</html>
