@@ -27,7 +27,7 @@ body {
     padding: 0px;
     /*text-transform:uppercase;*/
     width: 100%;
-
+    margin-top: -40px;
     /*color: #70787e;*/
     background-image: url('../img/bg-img.gif');
     background-color: rgb(18, 18, 18);
@@ -202,6 +202,7 @@ a:hover {
 .buttonDiv {
     margin-top: 2vh;
     display: none;
+    
 
 }
 
@@ -211,7 +212,7 @@ a:hover {
     height: 100vh;
     background: black url(../img/loading_12.gif) no-repeat center center;
     background-size: 20%;
-    position: relative;
+    position: fixed;
     z-index: 100;
     text-align: center;
     display: flex;

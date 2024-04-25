@@ -240,6 +240,8 @@
 			}
 			else {
 				updatePopupOverMessage("Wrong key!");
+				
+				document.querySelector(".buttonDiv").style.display = "block";
 			}
 			gameStateStack.push(GAME_STATE.OVER);
 			updateGameState(GAME_STATE.RESETING);
