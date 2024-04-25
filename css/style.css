@@ -44,7 +44,7 @@ body {
 :root {
     --bgColor: rgb(18, 18, 18);
     --textPrimary: #2c9080;
-    --primaryColor: #2c9080;
+    --primaryColor: #36fda0;
 }
 
 
@@ -64,6 +64,8 @@ a:hover {
     width: 546px;
 
     margin: auto;
+    position: relative;
+    top: 30px;
 }
 
 .content {
@@ -127,6 +129,15 @@ a:hover {
     font-weight: 400;
 }
 
+#box {
+    background: #111;
+    border: 1px solid #36fda0;
+    box-shadow: 0 0 20px -5px lime;
+
+    position: relative;
+    top: 20px;
+
+}
 #game-title {
     margin: auto;
     margin-top: 40px;
@@ -136,7 +147,7 @@ a:hover {
 
     font-size: 24px;
 
-    animation: pulse ease 400ms infinite;
+    animation: pulse ease 200ms infinite;
 }
 
 #game-title .title-keys {
@@ -183,6 +194,8 @@ a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
+    bottom: -70px;
 
 }
 
@@ -198,7 +211,7 @@ a:hover {
     height: 100vh;
     background: black url(../img/loading_12.gif) no-repeat center center;
     background-size: 20%;
-    position: fixed;
+    position: relative;
     z-index: 100;
     text-align: center;
     display: flex;
