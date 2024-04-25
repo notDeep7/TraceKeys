@@ -185,7 +185,19 @@ a:hover {
 .buttonDiv {
     margin-top: 2vh;
     display: none;
-   
+
+}
+
+#preloader {
+
+    width: 100%;
+    height: 100vh;
+    background: black url(../img/loading_12.gif) no-repeat center center;
+    background-size: 20%;
+    position: fixed;
+    z-index: 100;
+
+
 }
 
 .buttonDiv button {
