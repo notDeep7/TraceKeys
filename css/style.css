@@ -4,13 +4,13 @@
 }
 
 @font-face {
-  font-family: "pixelNes";
+    font-family: "pixelNes";
     src: url('fonts/pixelNes.otf');
 }
 
 /* html,body {
     /*height: 100%;*/
-    /*overflow: hidden;
+/*overflow: hidden;
 } */
 
 * {
@@ -20,18 +20,18 @@
 body {
     font-family: 'necapc3';
     font-weight: 400;
-    font-size:12px;
-    
-    margin:0px;
-    padding:0px;
+    font-size: 12px;
+
+    margin: 0px;
+    padding: 0px;
     /*text-transform:uppercase;*/
-    width:100%;
+    width: 100%;
 
     /*color: #70787e;*/
     background-image: url('../img/bg-img.gif');
     background-color: rgb(18, 18, 18);
     color: #888;
-    
+
     /* -webkit-font-smoothing: antialiased !important;
     -moz-osx-font-smoothing: antialiased !important; */
 
@@ -50,6 +50,7 @@ a {
     text-shadow: 0 0 20px;
     text-decoration: none;
 }
+
 a:hover {
     color: #eee;
 }
@@ -57,7 +58,7 @@ a:hover {
 #main-container {
     max-width: 768px;
     width: 546px;
-    
+
     margin: auto;
 }
 
@@ -91,12 +92,12 @@ a:hover {
 
 .key-container {
     float: left;
-    
+
     /*background-color: #eeeeee;*/
     border: solid 5px #333;
-    
+
     margin: 10px;
-    
+
     width: 60px;
     height: 60px;
 
@@ -104,7 +105,7 @@ a:hover {
 
     display: table;
 
-    
+
 }
 
 .container-text {
@@ -116,7 +117,7 @@ a:hover {
     text-align: center;
     vertical-align: middle;
 
-    color: rgba(255,255,255,0.92);
+    color: rgba(255, 255, 255, 0.92);
 
     font-size: 28px;
     font-weight: 400;
@@ -133,18 +134,21 @@ a:hover {
 
     animation: pulse ease 400ms infinite;
 }
+
 #game-title .title-keys {
     color: var(--primaryColor);
     text-shadow: 0 0 50px;
     font-family: 'pixelNes';
-    font-weight:400;
+    font-weight: 400;
 }
+
 #game-title .title-hit {
     color: var(--primaryColor);
     text-shadow: 0 0 50px;
     font-family: 'pixelNes';
     font-weight: 1000;
 }
+
 #game-score,
 #game-best-score {
     color: yellow;
@@ -153,6 +157,7 @@ a:hover {
     margin: auto;
     font-size: 14px;
 }
+
 #score-text,
 #popup-score-text {
     color: yellow;
@@ -161,21 +166,44 @@ a:hover {
 
 #game-content {
     width: 450px;
-    height: 400px;
+    height: 382px;
 
     margin: auto;
 
     position: relative;
 }
+
 #footer {
     /*padding: 10px;*/
-    margin: 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
 }
+
+.buttonDiv {
+    margin-top: 2vh;
+    display: none;
+   
+}
+
+.buttonDiv button {
+    padding: 7px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: rgb(193, 254, 71);
+    font-weight: bolder;
+
+}
+
 .github-link {
     margin-bottom: 10px;
 }
 
-.github-link, 
+.github-link,
 .footer-text {
     text-align: center;
 }
@@ -184,9 +212,11 @@ a:hover {
     position: absolute;
     width: 100%;
 }
+
 .popup {
     text-align: center;
 }
+
 #start-game-popup {
     padding-top: 32%;
 }
@@ -241,6 +271,7 @@ a:hover {
 .popups {
     display: block;
 }
+
 .popup {
     display: none;
 }
@@ -252,15 +283,17 @@ a:hover {
 .state-0 #start-game-popup {
     display: block;
 }
+
 .state-2 #restart-game-popup {
     display: block;
 }
+
 .state-4 #how-to-play-game-popup {
     display: block;
 }
 
 .popup-inner {
-    background: rgba(28,28,28,0.65);
+    background: rgba(28, 28, 28, 0.65);
     color: #36fda0;
     text-shadow: 0 0 30px;
     opacity: 0.9;
@@ -289,11 +322,26 @@ a:hover {
     font-weight: 600;
 }
 
-@keyframes pulse { 
-    0%{ opacity:.9;transform: skewX(.5deg);}
-    25%{ opacity:1;}
-    50%{opacity:.9;}
-    75%{ opacity:1; transform:skewX(.5deg);}
-    100%{opacity:.9;}
-}
+@keyframes pulse {
+    0% {
+        opacity: .9;
+        transform: skewX(.5deg);
+    }
 
+    25% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: .9;
+    }
+
+    75% {
+        opacity: 1;
+        transform: skewX(.5deg);
+    }
+
+    100% {
+        opacity: .9;
+    }
+}

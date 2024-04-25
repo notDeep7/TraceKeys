@@ -129,7 +129,7 @@
 
 					if (queue.length == boxContainers.length) {
 						updatePopupOverMessage("Overflown!");
-
+						document.querySelector(".buttonDiv").style.display = "block";
 						gameStateStack.push(GAME_STATE.OVER);
 						updateGameState(GAME_STATE.RESETING);
 					}
@@ -279,6 +279,7 @@
 
 		var restartBtn = document.getElementById("restart-button");
 		restartBtn.addEventListener('click', function restartBtnHandler() {
+			document.querySelector('.buttonDiv').style.display = "none";
 			gameStateStack.push(GAME_STATE.PLAYING);
 			updateGameState(GAME_STATE.RESETING);
 		});
