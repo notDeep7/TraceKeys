@@ -131,7 +131,7 @@ a:hover {
 
     font-size: 24px;
 
-    animation: pulse ease 200ms infinite;
+    animation: pulse ease 400ms infinite;
 }
 #game-title .title-keys {
     color: var(--primaryColor);
@@ -155,6 +155,7 @@ a:hover {
 }
 #score-text,
 #popup-score-text {
+    color: yellow;
     font-weight: 400;
 }
 
@@ -194,6 +195,17 @@ a:hover {
     padding-top: 29%;
 }
 
+#popup-over-msg {
+    color: lime;
+    text-shadow: 0 0 30px;
+}
+
+#restart-button {
+    color: #36fda0;
+    text-shadow: 0 0 30px;
+}
+
+
 #how-to-play-game-popup {
     padding-top: 25%;
 }
@@ -219,6 +231,11 @@ a:hover {
 
 .wide-btn {
     width: 140px;
+}
+
+.pop-state-btn {
+    color: yellow;
+    text-shadow: 0 0 30px;
 }
 
 .popups {
