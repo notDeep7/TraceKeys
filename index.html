@@ -10,7 +10,11 @@
 </head>
 
 <body>
-	<div id="preloader"></div>
+	<div id="preloader">
+		<div class="text">
+			< moving to <span>stage-II </span>>
+		</div>
+	</div>
 	<div id="main-container">
 		<div id="game-title"><span class="title-keys">Trace</span><span class="title-hit"> Keys</span></div>
 		<div id="game-score">
@@ -145,7 +149,7 @@
 			window.removeEventListener('load', load, false);
 			setTimeout(function () {
 				loader.style.display = 'none';
-			}, 2000);
+			}, 5000);
 
 		}, false);
 	</script>

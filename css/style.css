@@ -196,9 +196,67 @@ a:hover {
     background-size: 20%;
     position: fixed;
     z-index: 100;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
 
 
 }
+
+#preloader .text {
+    margin-top: 30vh;
+    font-size: 14px;
+}
+
+#preloader .text span {
+    color: rgb(92, 255, 209);
+    animation: flicker 3s linear infinite;
+}
+
+@keyframes flicker {
+
+    0%,
+    19%,
+    22%,
+    62%,
+    64%,
+    70%,
+    100% {
+        opacity: 0.99;
+        text-shadow:
+            -1px -1px 0 rgba(255, 255, 255, 0.4),
+
+
+
+
+            0 0 2px,
+
+            0 2px 3px #000;
+    }
+
+    20%,
+    21%,
+    63%,
+    65%,
+    69.9% {
+        opacity: 0.4;
+        text-shadow: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 .buttonDiv button {
     padding: 7px;
