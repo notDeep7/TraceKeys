@@ -28,6 +28,7 @@ body {
     width:100%;
 
     /*color: #70787e;*/
+    background-image: url('../img/bg-img.gif');
     background-color: rgb(18, 18, 18);
     color: #888;
     
@@ -129,6 +130,8 @@ a:hover {
     padding: 10px;
 
     font-size: 24px;
+
+    animation: pulse ease 200ms infinite;
 }
 #game-title .title-keys {
     color: var(--primaryColor);
@@ -267,5 +270,13 @@ a:hover {
     color: #36fda0;
     text-shadow: 0 0 30px;
     font-weight: 600;
+}
+
+@keyframes pulse { 
+    0%{ opacity:.9;transform: skewX(.5deg);}
+    25%{ opacity:1;}
+    50%{opacity:.9;}
+    75%{ opacity:1; transform:skewX(.5deg);}
+    100%{opacity:.9;}
 }
 
