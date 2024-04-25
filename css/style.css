@@ -130,10 +130,11 @@ a:hover {
 }
 
 #box {
+   
     background: #111;
     border: 1px solid #36fda0;
     box-shadow: 0 0 20px -5px lime;
-
+    border-radius: 10px;
     position: relative;
     top: 20px;
 
@@ -184,7 +185,7 @@ a:hover {
     height: 382px;
 
     margin: auto;
-
+padding-top: 21px;
     position: relative;
 }
 
@@ -195,7 +196,7 @@ a:hover {
     flex-direction: column;
     align-items: center;
     position: relative;
-    bottom: -70px;
+    bottom: -50px;
 
 }
 
